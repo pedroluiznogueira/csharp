@@ -8,7 +8,9 @@ namespace Tutorial.model
 {
     class Car : Vehicle
     {
-        public string Fullname
-        { get; set; }
+        public override void present()
+        {
+            Console.WriteLine("I'm a car");
+        }
     }
 }

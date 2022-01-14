@@ -7,17 +7,11 @@ namespace Tutorial
     {
         static void Main(string[] args)
         {
-            Car pedro = new Car();
+            Vehicle myCar = new Car();
+            myCar.present();
 
-            // if you assign to object.Property you are using setter
-            pedro.Name = "pedro";
-            // if you access object.Property you are using getter
-            Console.WriteLine(pedro.Name);
-
-            // if you assign to object.Property you are using setter
-            pedro.Fullname = "pedro luiz nogueira mendes";
-            // if you access object.Property you are using getter
-            Console.WriteLine(pedro.Fullname);
+            Car myOtherCar = new Car();
+            myOtherCar.present();
         }
     }
 }

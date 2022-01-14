@@ -8,7 +8,9 @@ namespace Tutorial.model
 {
     class Vehicle
     {
-        public string Name
-        { get; set; }
+        public virtual void present()
+        {
+            Console.WriteLine("I'm a vehicle");
+        }
     }
 }
