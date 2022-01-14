@@ -8,12 +8,17 @@ namespace Tutorial
 {
     class Car
     {
-        public string model;
-        public string color;
-        public int year;         
-        public void fullThrottle()   // method
+        public string model;  // Create a field
+
+        // Create a class constructor for the Car class
+        public Car()
         {
-            Console.WriteLine("The car is going as fast as it can!");
+            model = "Mustang"; // Set the initial value for model
+        }
+
+        public Car(string model)
+        {
+            this.model = model;
         }
     }
 }
