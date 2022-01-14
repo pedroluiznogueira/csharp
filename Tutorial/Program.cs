@@ -4,20 +4,14 @@ namespace Tutorial
 {
     class Program
     {
-        static void MyMethod()
+        static string MyMethod(string name)
         {
-            Console.WriteLine("I just got executed!");
+            return "olá" + name;
         }
 
         static void Main(string[] args)
         {
-            MyMethod();
-            MyMethod();
-            MyMethod();
+            Console.WriteLine(MyMethod("pedro"));
         }
-
-        // I just got executed!
-        // I just got executed!
-        // I just got executed!
     }
 }
