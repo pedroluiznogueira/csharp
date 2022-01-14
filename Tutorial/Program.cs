@@ -4,12 +4,20 @@ namespace Tutorial
 {
     class Program
     {
+        static void MyMethod()
+        {
+            Console.WriteLine("I just got executed!");
+        }
+
         static void Main(string[] args)
         {
-            int[] myNumbers = { 5, 1, 8, 9 };
-            Console.WriteLine(myNumbers.Max());  // returns the largest value
-            Console.WriteLine(myNumbers.Min());  // returns the smallest value
-            Console.WriteLine(myNumbers.Sum());  // returns the sum of elements
+            MyMethod();
+            MyMethod();
+            MyMethod();
         }
+
+        // I just got executed!
+        // I just got executed!
+        // I just got executed!
     }
 }
