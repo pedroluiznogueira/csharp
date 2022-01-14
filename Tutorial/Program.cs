@@ -4,17 +4,14 @@
     {
         static void Main(string[] args)
         {
-            // implicit casting
-            int myInt = 2;
-            double myIntAsDouble = myInt;
+            // Type your username and press enter
+            Console.WriteLine("Enter username:");
 
-            Console.WriteLine(myIntAsDouble);
+            // Create a string variable and get user input from the keyboard and store it in the variable
+            string userName = Console.ReadLine();
 
-            // explicit casting
-            double myDouble = 1.0;
-            int myDoubleAsInt = (int) myDouble;
-            
-            Console.WriteLine(myDoubleAsInt);
+            // Print the value of the variable (userName), which will display the input value
+            Console.WriteLine("Username is: " + userName);
         }
     }
 }
