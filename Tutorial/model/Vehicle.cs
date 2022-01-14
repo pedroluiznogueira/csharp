@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace Tutorial.model
 {
-    class Vehicle
+    abstract class Vehicle
     {
-        public virtual void present()
+        public abstract void present();
+
+        public void print()
         {
-            Console.WriteLine("I'm a vehicle");
+            Console.WriteLine("hey");
         }
     }
 }
