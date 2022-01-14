@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tutorial.internal interface
+namespace Tutorial.interfaces
 {
-    internal interface BestVehicle
-{
-}
+    interface IBestVehicle
+    {
+        void greet();
+    }
 }
