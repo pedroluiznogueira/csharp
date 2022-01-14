@@ -4,24 +4,20 @@
     {
         static void Main(string[] args)
         {
-            int time = 22;
-            if (time < 10)
+            int i = 0;
+            while (i < 5)
             {
-                Console.WriteLine("Good morning.");
+                Console.WriteLine(i);
+                i++;
             }
-            else if (time < 20)
-            {
-                Console.WriteLine("Good day.");
-            }
-            else
-            {
-                Console.WriteLine("Good evening.");
-            }
-            // Outputs "Good evening."
 
-            int timeee = 20;
-            string result = (timeee < 18) ? "Good day." : "Good evening.";
-            Console.WriteLine(result);
+            int j = 0;
+            do
+            {
+                Console.WriteLine(j);
+                j++;
+            }
+            while (j < 5);
         }
     }
 }
