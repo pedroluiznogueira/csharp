@@ -4,34 +4,20 @@
     {
         static void Main(string[] args)
         {
-            //for (int i = 0; i < 10; i++)
-            //{
-            //    if (i == 4)
-            //    {
-            //        break;
-            //    }
-            //    Console.WriteLine(i);
-            //}
-
-            //for (int i = 0; i < 10; i++)
-            //{
-            //    if (i == 4)
-            //    {
-            //        continue;
-            //    }
-            //    Console.WriteLine(i);
-            //}
-
-            int i = 0;
-            while (i < 10)
+            // Sort a string
+            string[] cars = { "Volvo", "BMW", "Ford", "Mazda" };
+            Array.Sort(cars);
+            foreach (string i in cars)
             {
                 Console.WriteLine(i);
-                i++;
-                if (i == 4)
-                {
-                    continue;
-                }
-                Console.WriteLine("showing");
+            }
+
+            // Sort an int
+            int[] myNumbers = { 5, 1, 8, 9 };
+            Array.Sort(myNumbers);
+            foreach (int i in myNumbers)
+            {
+                Console.WriteLine(i);
             }
         }
     }
