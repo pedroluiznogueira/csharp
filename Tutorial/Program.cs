@@ -4,27 +4,17 @@
     {
         static void Main(string[] args)
         {
-            //declaring and assigning
-            int myNum = 5;
+            // implicit casting
+            int myInt = 2;
+            double myIntAsDouble = myInt;
 
-            // declaring without assigning
-            string myText;
-            myText = "pedro";
+            Console.WriteLine(myIntAsDouble);
 
-            char first = 'p', second = 'l'; 
-
-            // constant
-            const string noChange = "luiz";
-
-            double myDoubleNum = 5.99D;
-            char myLetter = 'D';
-            bool myBool = true;
-
-            Console.WriteLine(myNum);
-            Console.WriteLine(myText);
-            Console.WriteLine(first);
-            Console.WriteLine(second);
-            Console.WriteLine(noChange);    
+            // explicit casting
+            double myDouble = 1.0;
+            int myDoubleAsInt = (int) myDouble;
+            
+            Console.WriteLine(myDoubleAsInt);
         }
     }
 }
