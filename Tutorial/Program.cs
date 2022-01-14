@@ -6,11 +6,12 @@ namespace Tutorial
     {
         static void Main(string[] args)
         {
-            Car Ford = new Car();  // Create an object of the Car Class (this will call the constructor)
-            Console.WriteLine(Ford.model);  // Print the value of model
+            Person pedro = new Person();
 
-            Car Bmw = new Car("320i");
-            Console.WriteLine(Bmw.model);
+            // if you assign to object.Property you are using setter
+            pedro.Name = "pedro luiz nogueira mendes";
+            // if you access object.Property you are using getter
+            Console.WriteLine(pedro.Name);
         }
     }
 }
