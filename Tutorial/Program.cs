@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using Tutorial.model;
 
 namespace Tutorial
 {
@@ -6,12 +7,17 @@ namespace Tutorial
     {
         static void Main(string[] args)
         {
-            Person pedro = new Person();
+            Car pedro = new Car();
 
             // if you assign to object.Property you are using setter
-            pedro.Name = "pedro luiz nogueira mendes";
+            pedro.Name = "pedro";
             // if you access object.Property you are using getter
             Console.WriteLine(pedro.Name);
+
+            // if you assign to object.Property you are using setter
+            pedro.Fullname = "pedro luiz nogueira mendes";
+            // if you access object.Property you are using getter
+            Console.WriteLine(pedro.Fullname);
         }
     }
 }
